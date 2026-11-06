@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root{
+
+    /* Cores */
+    --color-background: #080D16;
+    --color-surface: #111B2B;
+    --color-surface-light: #172438;
+    --color-primary: #2589E8;
+    --color-primary-light: #3998FF;
+    --color-text: #FFFFFF;
+    --color-text-secondary: #AAB5C5;
+    --color-border: #263D59;
+
+    /* Fontes */
+    --font-heading: 'DM Sans', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+
+    /* Configurações H1 */
+    --h1-font: var(--font-heading);
+    --h1-size: 60px;
+    --h1-color: var(--color-text);
+
+
+    /* Configurações H2 */
+    --h2-font: var(--font-heading);
+    --h2-size: 48px;
+    --h2-color: var(--color-text);
+
+
+    /* Configurações H3 */
+    --h3-font: var(--font-heading);
+    --h3-size: 40px;
+    --h3-color: var(--color-text);
+
+    /* Configurações H4 */
+    --h4-font: var(--font-heading);
+    --h4-size: 32px;
+    --h4-color: var(--color-text);
+
+    /* Configurações do Body */
+    --body-font: var(--font-body);
+    --body-size: 20px;
+    --body-color: var(--color-text-secondary);
+    --body-line-height: 1.7;
+
+    /* Transições */
+    --transition-default: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--body-font);
+    font-size: var(--body-size);
+    color: var(--body-color);
+    line-height: var(--body-line-height);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: var(--h1-font);
+    font-size: var(--h1-size);
+    color: var(--h1-color);
+}
+
+h2 {
+    font-family: var(--h2-font);
+    font-size: var(--h2-size);
+    color: var(--h2-color);
+}
+
+h3 {
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    color: var(--h3-color);
+}
+
+h4 {
+    font-family: var(--h4-font);
+    font-size: var(--h4-size);
+    color: var(--h4-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
