@@ -133,8 +133,8 @@ main {
 
 .home-image {
     flex-shrink: 0;
-    width: 320px;
-    height: 320px;
+    width: 380px;
+    height: 380px;
 }
 
 .home-image img {
