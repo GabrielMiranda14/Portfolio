@@ -11,6 +11,7 @@
     --color-background: #080D16;
     --color-surface: #111B2B;
     --color-surface-light: #172438;
+    --color-surface-transparent: rgba(17, 27, 43, 0.90);
     --color-primary: #2589E8;
     --color-primary-light: #3998FF;
     --color-text: #FFFFFF;
