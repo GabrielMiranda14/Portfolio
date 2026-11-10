@@ -11,15 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- CSS próprio -->
     <link rel="stylesheet" href="src/styles/global.css">
     <link rel="stylesheet" href="src/styles/style.css">
 
-    <!-- JavaScript do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- JavaScript próprio usando módulos -->
     <script type="module" src="src/js/main.js"></script>
 </head>
@@ -65,15 +60,17 @@
         <div class="home-content">
             <!-- TEXTO DE APRESENTAÇÃO -->
             <div class="home-text">
-                <p class="home-greeting">Olá, meu nome é</p>
-                <h1>Gabriel Miranda</h1>
-                <h2>Desenvolvedor em formação</h2>
-                <p class="home-description">
-                    Sou estudante da área de Tecnologia da Informação,
-                    interessado em desenvolvimento de software e criação
-                    de soluções digitais. Estou sempre buscando aprender
-                    novas tecnologias e desenvolver minhas habilidades.
-                </p>
+                <div class="home-text-content">
+                    <p class="home-greeting">Olá, meu nome é</p>
+                    <h1>Gabriel Miranda</h1>
+                    <h2>Desenvolvedor em formação</h2>
+                    <p class="home-description">
+                        Sou estudante da área de Tecnologia da Informação,
+                        interessado em desenvolvimento de software e criação
+                        de soluções digitais. Estou sempre buscando aprender
+                        novas tecnologias e desenvolver minhas habilidades.
+                    </p>
+                </div>
 
                 <!-- BOTÕES -->
                 <div class="home-buttons">
@@ -87,7 +84,55 @@
             <div class="home-image">
                 <img src="src/assets/images/profile/perfil-portfolio.png" alt="Foto de perfil de Gabriel Miranda">
             </div>
+        </div>
 
+        <!-- HARD SKILLS E SOFT SKILLS -->
+        <div class="skills-container">
+
+            <!-- HARD SKILLS -->
+            <div class="skills-card">
+                <div class="skills-card-header">
+                    <span class="skills-card-number">TÉCNICO</span>
+                    <h2>Hard Skills</h2>
+                    <p>Conhecimentos técnicos e ferramentas que utilizo e estou aprendendo.</p>
+                </div>
+
+                <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">SQL / MySQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Figma (UI/UX Design)</span>
+                </div>
+            </div>
+
+            <!-- SOFT SKILLS -->
+            <div class="skills-card">
+                <div class="skills-card-header">
+                    <span class="skills-card-number">PESSOAL</span>
+                    <h2>Soft Skills</h2>
+                    <p>Habilidades pessoais que contribuem para meu desenvolvimento profissional.</p>
+                </div>
+
+                <div class="skills-list">
+                    <span class="skill-tag">Organização</span>
+                    <span class="skill-tag">Proatividade</span>
+                    <span class="skill-tag">Dedicação</span>
+                    <span class="skill-tag">Esforço</span>
+                    <span class="skill-tag">Resolução de problemas</span>
+                    <span class="skill-tag">Pensamento lógico</span>
+                    <span class="skill-tag">Trabalho em equipe</span>
+                    <span class="skill-tag">Aprendizado contínuo</span>
+                    <span class="skill-tag">Liderança</span>
+                </div>
+            </div>
         </div>
 
     </main>
