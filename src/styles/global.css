@@ -54,16 +54,11 @@
     --transition-default: 0.3s ease;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background-color: var(--color-background);
     font-family: var(--body-font);
     font-size: var(--body-size);
     color: var(--body-color);
-    line-height: var(--body-line-height);
     overflow-x: hidden;
 }
 
@@ -102,4 +97,8 @@ button {
 img {
     max-width: 100%;
     display: block;
+}
+
+html {
+    scroll-behavior: smooth;
 }
