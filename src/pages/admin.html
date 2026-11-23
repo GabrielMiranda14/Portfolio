@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Painel Administrativo </title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="portfolio-navbar">
+            <a class="navbar-brand" href="../../index.html">
+                GM<span>.</span>
+            </a>
+            <a href="../../index.html" class="nav-link">
+                Voltar ao portfólio
+            </a>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        <!-- SEÇÃO ADMINISTRATIVA -->
+        <div class="admin-section">
+            <div class="admin-container">
+                <div class="admin-heading">
+                    <p class="admin-label">GERENCIAMENTO</p>
+                    <h1>Painel Administrativo</h1>
+                    <p>Gerencie as mensagens recebidas pelo seu portfólio.</p>
+                </div>
+
+                <div class="admin-content">
+                    <div class="admin-section-heading">
+                        <h2>Mensagens recebidas</h2>
+                        <p> Visualize e gerencie os contatos enviados pelo formulário.</p>
+                    </div>
+
+                    <div id="messages-container" class="messages-container">
+                        <!-- As mensagens serão inseridas pelo JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL DE EDIÇÃO -->
+        <div id="edit-modal" class="edit-modal">
+            <div class="edit-modal-content">
+                <div class="edit-modal-header">
+                    <h2>Editar mensagem</h2>
+                    <button type="button" id="close-modal" class="close-modal">
+                        &times;
+                    </button>
+                </div>
+
+                <form id="edit-form">
+                    <input type="hidden" id="edit-id">
+                    <div class="form-group">
+                        <label for="edit-name">Nome</label>
+                        <input type="text" id="edit-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-email">E-mail</label>
+                        <input type="email" id="edit-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-subject">Assunto</label>
+                        <input type="text" id="edit-subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-message">Mensagem</label>
+                        <textarea id="edit-message" rows="5" required></textarea>
+                    </div>
+                    <div class="edit-modal-actions">
+                        <button type="button" id="cancel-edit" class="cancel-button">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="save-button">
+                            Salvar alterações
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="../js/admin.js"></script>
+</body>
+</html>
