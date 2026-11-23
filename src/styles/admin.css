@@ -43,7 +43,7 @@
 .admin-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .admin-section-heading {

@@ -794,3 +794,113 @@ main {
     transform: translateY(2px) scale(0.98);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+footer {
+    padding: 60px 0px;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-container {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-logo {
+    color: var(--color-text);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    font-weight: 700;
+    transition: var(--transition-default);
+}
+
+.footer-logo span {
+    color: var(--color-primary-light);
+}
+
+.footer-logo:hover {
+    color: var(--color-primary-light);
+}
+
+.footer-brand p {
+    max-width: 320px;
+    color: var(--color-text-secondary);
+    font-size: var(--body-size);
+    line-height: 1.5;
+}
+
+.footer-navigation,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.footer-navigation h3,
+.footer-social h3 {
+    color: var(--color-text);
+    font-family: var(--h3-font);
+    font-size: var(--h3-size);
+    font-weight: 700;
+}
+
+.footer-navigation a,
+.footer-social a {
+    color: var(--color-text-secondary);
+    font-size: var(--body-size);
+    transition: var(--transition-default);
+}
+
+.footer-navigation a:hover,
+.footer-social a:hover {
+    color: var(--color-primary-light);
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-top: 25px;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-bottom p {
+    color: var(--color-text-secondary);
+    font-size: var(--body-size);
+}
+
+/* DIVISOR DE SEÇÕES */
+
+.section-divider {
+    width: min(1100px, calc(100% - 40px));
+    height: 1px;
+    margin: 0 auto;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-primary),
+        var(--color-primary-light),
+        var(--color-primary),
+        transparent
+    );
+    opacity: 0.6;
+}
