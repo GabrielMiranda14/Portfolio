@@ -339,3 +339,117 @@
     background-color: rgba(37, 137, 232, 0.22);
     transform: translateY(-2px);
 }
+
+/* RESPONSIVIDADE - PAINEL ADMINISTRATIVO */
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+    .admin-main {
+        padding-top: 130px;
+    }
+
+    .admin-container {
+        gap: 35px;
+    }
+
+    .admin-content {
+        gap: 30px;
+    }
+
+    .messages-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .message-card {
+        padding: 22px;
+    }
+
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+
+    .admin-main {
+        padding-top: 110px;
+        padding-bottom: 40px;
+    }
+
+    .admin-container {
+        width: calc(100% - 30px);
+        gap: 30px;
+    }
+
+    .admin-heading {
+        gap: 8px;
+    }
+
+    .admin-content {
+        gap: 25px;
+    }
+
+    .admin-section-heading {
+        gap: 8px;
+    }
+
+    .message-card {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .message-card-header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .message-type {
+        font-size: 13px;
+    }
+
+    .message-card-actions {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .message-edit-button,
+    .message-delete-button {
+        flex: 1;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+}
+
+/* MODAL - RESPONSIVIDADE */
+
+@media (max-width: 480px) {
+
+    .edit-modal {
+        padding: 12px;
+    }
+
+    .edit-modal-content {
+        padding: 20px;
+        gap: 20px;
+        max-height: 85vh;
+    }
+
+    .edit-modal-header {
+        gap: 10px;
+    }
+
+    .edit-modal-actions {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .cancel-button,
+    .save-button {
+        width: 100%;
+        padding: 12px;
+    }
+
+}

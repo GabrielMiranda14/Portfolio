@@ -102,3 +102,33 @@ img {
 html {
     scroll-behavior: smooth;
 }
+
+/* RESPONSIVIDADE GLOBAL */
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+    :root {
+        --h1-size: 48px;
+        --h2-size: 38px;
+        --h3-size: 30px;
+        --h4-size: 26px;
+
+        --body-size: 18px;
+    }
+
+}
+
+/* CELULARES */
+@media (max-width: 480px) {
+
+    :root {
+        --h1-size: 36px;
+        --h2-size: 30px;
+        --h3-size: 24px;
+        --h4-size: 21px;
+
+        --body-size: 16px;
+    }
+
+}
